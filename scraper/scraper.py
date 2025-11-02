@@ -8,8 +8,8 @@ scraper/scraper.py
 - 写 articles.json 和 report.md
 
 只用:
-- requests
-- beautifulsoup4
+- requests-拉页面
+- beautifulsoup4-解析HTML
 - Python 标准库
 """
 from urllib.parse import urljoin  # 确保这个 import 在文件顶部
@@ -23,9 +23,11 @@ import sys
 import re
 from typing import List, Dict, Optional, Tuple
 
+#站点根和列表页在这里
 BASE_URL = "https://nyunews.com"
 LISTING_URL = "https://nyunews.com/category/news/university-news/"
 
+#伪装成User-agent，避免被403
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
@@ -101,6 +103,7 @@ def extract_articles_from_listing(html: str, limit: int = 5) -> List[Dict[str, s
                     date_raw = dt_attr.split("T", 1)[0].strip()
                 else:
                     date_raw = dt_attr.strip()
+                    # if no time(backup)
             if not date_raw:
                 date_raw = time_tag.get_text(strip=True)
 
@@ -152,25 +155,6 @@ def extract_articles_from_listing(html: str, limit: int = 5) -> List[Dict[str, s
 
     return results
 
-def parse_article_titles(html: str, limit: int = 5) -> List[str]:
-    """
-    Extract plain headline text from <h1>, <h2>, <h3> tags.
-
-    This is intentionally simple to satisfy the tests:
-    given some HTML, return a list like
-    ["Headline One", "Subheadline A", ...] (up to 'limit' items).
-    """
-    soup = BeautifulSoup(html, "html.parser")
-    titles: List[str] = []
-
-    # collect all headings that could be article titles
-    for tag in soup.find_all(["h1", "h2", "h3"]):
-        text = tag.get_text(strip=True)
-        if text:
-            titles.append(text)
-
-    # respect the limit (default 5)
-    return titles[:limit]
 
 
 def normalize_date_fuzzy(date_str: str) -> Optional[str]:
@@ -198,9 +182,9 @@ def normalize_date_fuzzy(date_str: str) -> Optional[str]:
             return dt.strftime("%Y-%m-%d")
         except ValueError:
             continue
-
-    return None
-
+            return None
+        
+ # --- time search backup ---
 
 def date_from_url(url: str) -> Optional[str]:
     """
@@ -258,15 +242,15 @@ def extract_body_text_and_date(html: str) -> Tuple[str, Optional[str]]:
         if content_container:
             break
 
+    # 最后兜底 body
     if not content_container:
-        # 最后兜底 body
         content_container = soup.body or soup
 
     paragraphs = []
     for p in content_container.find_all("p"):
         text = p.get_text(" ", strip=True)
         if len(text.split()) < 3:
-            # 跳过非常短的噪音段
+            # 如果非常短就不计入
             continue
         paragraphs.append(text)
 
@@ -305,7 +289,7 @@ def build_output(articles_meta: List[Dict[str, str]]) -> List[Dict[str, object]]
 
         body_text, page_date = extract_body_text_and_date(article_html)
         word_count, summary = summarize(body_text)
-
+        #日期部分
         final_date = (
             normalize_date_fuzzy(art["date_raw"])
             or page_date
