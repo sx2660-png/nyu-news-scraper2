@@ -1,31 +1,31 @@
 # NYU News Report
 
-## NYU Grossman ranks No. 2 in anti-‘wokeness’ evaluation (2025-10-28)
-**URL:** https://nyunews.com/news/2025/10/28/grossman-woke-ranking/
-**Summary:** NYU’s Grossman School of Medicine placed No. 2 out of 154 medical schools on a ranking that ordered institutions based on their apparent diversity, equity and inclusion initiatives, rewarding those that “ resist the tide of wokeness .” The “ Medical School Excellence Index ,” published last month by new...
+## Faculty union rejects admin offer to hire mediator (2025-10-31)
+**URL:** https://nyunews.com/news/2025/10/31/nyu-fcu-mediator-repsonse/
+**Summary:** NYU’s contract faculty union rejected administrators’ push to hire a third-party to mediate its negotiation sessions, claiming that the university is stalling on at least 14 proposals related to faculty wages, academic freedom and data privacy. NYU spokesperson John Beckman said on Wednesday that in an effort to “spur progress”...
 
 ---
 
-## Musicians destigmatize sickle cell disease with NYU researchers (2025-10-28)
-**URL:** https://nyunews.com/news/2025/10/28/music-raise-awareness-about-sickle-cell/
-**Summary:** NYU researchers partnered with Nigerian singer Adekunle Gold to launch an organization that uses music to reduce stigma and raise awareness around sickle cell disease, as a part of the university’s Arts & Impact Initiative launched last month. The project, titled “Building Engagement Through Music Artistry and Storytelling for Sickle...
+## NYU unveils most powerful supercomputer in New York state (2025-10-31)
+**URL:** https://nyunews.com/news/2025/10/31/nyu-torch-supercomputer-launched/
+**Summary:** NYU’s new supercomputer, launched earlier this month, is now the most powerful in New York state and across any higher education institution in the country. Five times faster than the university’s current supercomputer, “ Torch ” is programmed to meet increasing demands of researchers at NYU. The supercomputer is a...
 
 ---
 
-## NYU Langone opens ambulatory care center in Commack (2025-10-28)
-**URL:** https://nyunews.com/news/2025/10/28/langone-commack-ambulatory-care/
-**Summary:** NYU Langone Health opened its sixth Suffolk County medical center last month in an effort to expand Long Island’s ambulatory care and make multispeciality practices accessible for patients in the area. The two-floor care center, NYU Langone Ambulatory Care Commack, houses nearly 30 exam rooms, a procedure room and X-ray...
+## Professors criticize Trump compact at town hall (2025-10-30)
+**URL:** https://nyunews.com/news/2025/10/30/aa-uptown-hall/
+**Summary:** Professors across East Coast universities called for institutions to reject President Donald Trump’s contract offering “ multiple positive benefits ” to schools that meet a series of his political demands at an American Association of University Professors town hall at NYU’s Cantor Film Center on Tuesday. At the event, held...
 
 ---
 
-## Employee insurance switch will not affect gender-affirming care, NYU says (2025-10-27)
-**URL:** https://nyunews.com/news/2025/10/27/nyu-insurance-company-switch/
-**Summary:** NYU employees’ health insurance will be provided by Aetna instead of UnitedHealthcare starting Jan. 1, in an effort to reduce costs and better align health care plans with NYU Langone Health services. Coverage for gender-affirming care will not be affected. During September faculty council meetings, Senior Associate Vice President for...
+## Diplomats discuss international law at NYU French house (2025-10-20)
+**URL:** https://nyunews.com/news/2025/10/20/international-french-law-event/
+**Summary:** A panel of U.S. and French diplomats discussed the current state of international law and global conflicts at NYU’s La Maison Française Tuesday evening, as part of its two-year partnership with Normandie Pour La Paix. Organized by Guy Sorman, founder and honorary president of Action Contre La Faim, the event...
 
 ---
 
-## Weight-loss surgery may beat GLP-1 drugs for long-term results (2025-10-27)
-**URL:** https://nyunews.com/news/2025/10/27/langone-weight-loss-surgery-ozempic-long-term-results/
-**Summary:** Bariatric weight-loss surgery can help patients lose five times more weight than popular medications like Ozempic, expanding medical possibilities, according to a September NYU Langone Health study. Researchers analyzed the health records of over 50,000 patients who had undergone bariatric surgery or were prescribed glucagon-like peptide-1 agonist drugs to evaluate...
+## Beyond NYU: From playing the game to building the game (2025-10-30)
+**URL:** https://nyunews.com/news/2025/10/30/zeke-virant-beyond-9/
+**Summary:** Two decades before Zeke Virant helped build award-winning video games, he was a 10-year-old who was first exposed to the gaming world through his Apple II computer. That’s when he joined online messaging boards to team up with friends to practice their gaming skills. The player community was small then,...
 
 ---
