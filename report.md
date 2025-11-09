@@ -1,31 +1,31 @@
 # NYU News Report
 
-## Faculty union rejects admin offer to hire mediator (2025-10-31)
-**URL:** https://nyunews.com/news/2025/10/31/nyu-fcu-mediator-repsonse/
-**Summary:** NYU’s contract faculty union rejected administrators’ push to hire a third-party to mediate its negotiation sessions, claiming that the university is stalling on at least 14 proposals related to faculty wages, academic freedom and data privacy. NYU spokesperson John Beckman said on Wednesday that in an effort to “spur progress”...
+## NYU Abu Dhabi co-leads record-breaking 6G trial ()
+**URL:** https://nyunews.com/news/2025/11/7/nyu-abu-dhabi-terahertz-trial-record-speeds/
+**Summary:** NYU Abu Dhabi co-led a 6G Terahertz trial that achieved record transmission speeds of 145 Gbps, advancing wireless communications technology beyond current 5G technology. The new trial between NYUAD Wireless Center and the technology investment firm e& UAE will allow for higher speed, larger volume data transmission and minimal network...
 
 ---
 
-## NYU unveils most powerful supercomputer in New York state (2025-10-31)
-**URL:** https://nyunews.com/news/2025/10/31/nyu-torch-supercomputer-launched/
-**Summary:** NYU’s new supercomputer, launched earlier this month, is now the most powerful in New York state and across any higher education institution in the country. Five times faster than the university’s current supercomputer, “ Torch ” is programmed to meet increasing demands of researchers at NYU. The supercomputer is a...
+## 2 Othmer floods leave students stranded ()
+**URL:** https://nyunews.com/news/2025/11/7/nyu-othmer-hall-flooding/
+**Summary:** Several floors at Othmer Hall flooded after two pipes burst on Thursday, leaving pools of water over the building’s lobby and nearly two dozen suites and forcing some students to find alternative housing for the night. The first pipe burst in a seventh-floor dorm at 11:20 a.m., quickly soaking the...
 
 ---
 
-## Professors criticize Trump compact at town hall (2025-10-30)
-**URL:** https://nyunews.com/news/2025/10/30/aa-uptown-hall/
-**Summary:** Professors across East Coast universities called for institutions to reject President Donald Trump’s contract offering “ multiple positive benefits ” to schools that meet a series of his political demands at an American Association of University Professors town hall at NYU’s Cantor Film Center on Tuesday. At the event, held...
+## ‘Nobody feels secure’: NYU Shanghai to ax 50 contract faculty (2025-11-06)
+**URL:** https://nyunews.com/news/2025/11/06/nyu-shanghai-terminates-faculty-contracts/
+**Summary:** NYU Shanghai terminated at least 10 out of 30 contracts with faculty members who applied for reappointment and aims to eliminate around 40 more positions, moving forward with a long-term hiring recomposition to host more tenured faculty. Around 67% of professors at the site are contract faculty and 33% are...
 
 ---
 
-## Diplomats discuss international law at NYU French house (2025-10-20)
-**URL:** https://nyunews.com/news/2025/10/20/international-french-law-event/
-**Summary:** A panel of U.S. and French diplomats discussed the current state of international law and global conflicts at NYU’s La Maison Française Tuesday evening, as part of its two-year partnership with Normandie Pour La Paix. Organized by Guy Sorman, founder and honorary president of Action Contre La Faim, the event...
+## NYU biologists study marine life on UAE research ship (2025-11-06)
+**URL:** https://nyunews.com/news/2025/11/06/abu-dhabi-leads-marine-missions-exploring-arabian-gulf/
+**Summary:** NYU researchers found the Arabian Gulf’s climate resilience to be “ surprisingly high ” in a marine biology study aboard The Environmental Agency – Abu Dhabi-owned research vessel, “Jaywun.” The study’s discoveries could lead to further research into the effects of microorganisms adapting to global warming. The team of 10...
 
 ---
 
-## Beyond NYU: From playing the game to building the game (2025-10-30)
-**URL:** https://nyunews.com/news/2025/10/30/zeke-virant-beyond-9/
-**Summary:** Two decades before Zeke Virant helped build award-winning video games, he was a 10-year-old who was first exposed to the gaming world through his Apple II computer. That’s when he joined online messaging boards to team up with friends to practice their gaming skills. The player community was small then,...
+## Tandon researchers advance eco-friendly infrared detectors ()
+**URL:** https://nyunews.com/news/2025/11/3/tandon-eco-friendly-infrared-detectors/
+**Summary:** Tandon researchers found that semiconducting material may offer a safer and cheaper alternative to the toxic heavy-metal compounds typically used in infrared detectors because of its capacity for near to short-wave infrared detection. IR tracks movements through body heat and is commonly used for night cameras and health screenings. The...
 
 ---
