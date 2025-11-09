@@ -12,16 +12,19 @@ scraper/scraper.py
 - beautifulsoup4-解析HTML
 - Python 标准库
 """
-from urllib.parse import urljoin  # 确保这个 import 在文件顶部
-import requests
-from bs4 import BeautifulSoup 
+# --- Standard library imports ---
+from urllib.parse import urljoin # 确保这个 import 在文件顶部
 from datetime import datetime
-from typing import List
 from pathlib import Path
 import json
-import sys
 import re
-from typing import List, Dict, Optional, Tuple
+import sys
+from typing import Dict, List, Optional, Tuple
+
+
+# --- Third-party imports ---
+import requests
+from bs4 import BeautifulSoup
 
 #站点根和列表页在这里
 BASE_URL = "https://nyunews.com"
@@ -182,7 +185,7 @@ def normalize_date_fuzzy(date_str: str) -> Optional[str]:
             return dt.strftime("%Y-%m-%d")
         except ValueError:
             continue
-            return None
+    return None
         
  # --- time search backup ---
 

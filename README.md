@@ -11,8 +11,8 @@
 如何生成并运行工作区（macOS / zsh）：
 
 ```bash
-# 1. 进入项目目录
-cd /Users/senzu/Documents/nyu-news-scraper
+# 1. 进入项目目录（假设当前目录就是项目根目录）
+cd nyu-news-scraper
 
 # 2. 创建并激活虚拟环境
 python3 -m venv .venv
