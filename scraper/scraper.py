@@ -194,11 +194,11 @@ def date_from_url(url: str) -> Optional[str]:
     从 URL 中提取 /YYYY/MM/DD/ 这部分，
     转成 YYYY-MM-DD。
     """
-    m = re.search(r"/(\d{4})/(\d{2})/(\d{2})/", url)
+    m = re.search(r"/(\d{4})/(\d{1,2})/(\d{1,2})/", url)
     if not m:
         return None
     year, month, day = m.groups()
-    return f"{year}-{month}-{day}"
+    return f"{year}-{int(month):02d}-{int(day):02d}"
 
 
 def extract_body_text_and_date(html: str) -> Tuple[str, Optional[str]]:
@@ -208,19 +208,44 @@ def extract_body_text_and_date(html: str) -> Tuple[str, Optional[str]]:
     """
     soup = BeautifulSoup(html, "html.parser")
 
-    # 尝试拿 <time> 里的日期
-    iso_date = None
-    time_tag = soup.find("time")
-    if time_tag:
-        dt_attr = time_tag.get("datetime")
-        if dt_attr:
-            if "T" in dt_attr:
-                iso_date = dt_attr.split("T", 1)[0].strip()
-            else:
-                iso_date = dt_attr.strip()
+    # 优先拿机器可读的发布时间
+    iso_date: Optional[str] = None
+    # 1) <meta property="article:published_time" ...>
+    meta_time = soup.find("meta", attrs={"property": "article:published_time"}) or \
+               soup.find("meta", attrs={"name": "article:published_time"})
+    if meta_time and meta_time.get("content"):
+        iso_date = meta_time["content"].strip()
 
-        if not iso_date:
-            iso_date = normalize_date_fuzzy(time_tag.get_text(strip=True))
+   # 2) <time datetime="..."> 或其文本
+    if not iso_date:
+       time_tag = soup.find("time")
+       if time_tag:
+           dt_attr = time_tag.get("datetime")
+           if dt_attr:
+               iso_date = dt_attr.strip()  # 保留完整 datetime（包含时间/时区）
+           else:
+              iso_date = normalize_date_fuzzy(time_tag.get_text(strip=True))
+
+   # 3) JSON-LD 里的 datePublished/dateCreated
+    if not iso_date:
+       for script in soup.find_all("script", type="application/ld+json"):
+           try:
+               data = json.loads(script.string or "")
+           except Exception:
+               continue
+           def pick_date(obj):
+               return obj.get("datePublished") or obj.get("dateCreated") if isinstance(obj, dict) else None
+           candidate = None
+           if isinstance(data, list):
+               for item in data:
+                   candidate = pick_date(item)
+                   if candidate:
+                       break
+           else:
+               candidate = pick_date(data)
+           if candidate:
+               iso_date = str(candidate).strip()
+               break
 
     # 找正文容器（兜底策略多重尝试）
     candidate_selectors = [
@@ -294,11 +319,14 @@ def build_output(articles_meta: List[Dict[str, str]]) -> List[Dict[str, object]]
         word_count, summary = summarize(body_text)
         #日期部分
         final_date = (
-            normalize_date_fuzzy(art["date_raw"])
-            or page_date
+            normalize_date_fuzzy(page_date or "") 
+            or normalize_date_fuzzy(art.get("date_raw", ""))
             or date_from_url(art["url"])
             or ""
         )
+        # 保险：如果仍是 datetime（极少数情况），裁成日期
+        if "T" in final_date:
+             final_date = final_date.split("T", 1)[0]
 
         results.append(
             {

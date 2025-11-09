@@ -1,12 +1,12 @@
 # NYU News Report
 
-## NYU Abu Dhabi co-leads record-breaking 6G trial ()
+## NYU Abu Dhabi co-leads record-breaking 6G trial (2025-11-07)
 **URL:** https://nyunews.com/news/2025/11/7/nyu-abu-dhabi-terahertz-trial-record-speeds/
 **Summary:** NYU Abu Dhabi co-led a 6G Terahertz trial that achieved record transmission speeds of 145 Gbps, advancing wireless communications technology beyond current 5G technology. The new trial between NYUAD Wireless Center and the technology investment firm e& UAE will allow for higher speed, larger volume data transmission and minimal network...
 
 ---
 
-## 2 Othmer floods leave students stranded ()
+## 2 Othmer floods leave students stranded (2025-11-07)
 **URL:** https://nyunews.com/news/2025/11/7/nyu-othmer-hall-flooding/
 **Summary:** Several floors at Othmer Hall flooded after two pipes burst on Thursday, leaving pools of water over the building’s lobby and nearly two dozen suites and forcing some students to find alternative housing for the night. The first pipe burst in a seventh-floor dorm at 11:20 a.m., quickly soaking the...
 
@@ -24,7 +24,7 @@
 
 ---
 
-## Tandon researchers advance eco-friendly infrared detectors ()
+## Tandon researchers advance eco-friendly infrared detectors (2025-11-03)
 **URL:** https://nyunews.com/news/2025/11/3/tandon-eco-friendly-infrared-detectors/
 **Summary:** Tandon researchers found that semiconducting material may offer a safer and cheaper alternative to the toxic heavy-metal compounds typically used in infrared detectors because of its capacity for near to short-wave infrared detection. IR tracks movements through body heat and is commonly used for night cameras and health screenings. The...
 
